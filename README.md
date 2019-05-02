@@ -42,4 +42,16 @@ Desc:
     select d.dept_name,count(s.sid) from department d left join student s on d.id = s.deptid
     group by d.dept_name order by count(s.sid) desc,d.dept_name ASC
     
-    
+ JOINS:
+ =====
+   Different Types of SQL JOINs:
+   ============================
+    1.(INNER)JOIN : Returns records that have matching values in both tables;
+    2.LEFT(OUTER) JOIN  : Returns all records from the left table, and matched records from right table;
+    3.RIGHT(OUTER) JOIN : Returns all records from the right table,and matched records from left table;
+    4.FULL(OUTER) JOIN  : Returns all records when there is a match in either left or right table;
+//source: https://www.w3schools.com/sql/sql_join.asp
+
+
+
+
